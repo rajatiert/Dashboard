@@ -3,7 +3,7 @@ import { questionLogo, askUrl, dropDownUrl, searchUrl } from "@/constants/consta
 
 
 const PayoutsHeader = () => {
-    return <div className="flex w-full bg-white flex-row justify-between items-start py-3 px-8 shadow h-16">
+    return <div className="flex w-full sticky top-0 bg-white flex-row justify-between items-start py-3 px-8 shadow h-16">
         <div className="flex flex-row gap-4 self-center items-center ">
             <p className="text-xl font-medium text-dukan-black">Payouts</p>
             <div className="flex flex-row items-center gap-[6px] ">

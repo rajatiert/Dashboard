@@ -19,21 +19,31 @@ const Overview = () => {
             </div>
 
             <div className="flex flex-row w-full gap-5 ">
-                <div className=" min-w-[360px] min-h-[154px] bg-dukan-primaryBlue p-4 flex flex-col rounded-md ">
-                    <div className="flex flex-row items-center gap-2">
-                        <p className="text-white font-normal text-[16px]">Next Payout</p>
-                        <div><Image className="text-white" src={questionMarkUrl} width="14" height="14" /></div>
-                    </div>
-                    <div className="flex flex-row justify-between text-white">
-                        <p className="font-medium text-[32px]">₹ 2,312.23</p>
-                        <div className="flex flex-row justify-center items-center">
-                            <p className="font-medium text-[16px] self-center underline">23 orders</p>
-                            <div>
-                                <Image src={arrowRightUrl} width="24" height="24" />
+                <div className=" min-w-[360px] min-h-[154px] bg-dukan-primaryBlue flex flex-col justify-between rounded-md ">
+
+                    <div className="flex flex-col justify-between p-4  ">
+                        <div className="flex flex-col">
+                            <div className="flex flex-row items-center gap-2">
+
+                                <p className="text-white font-normal text-[16px]">Next Payout</p>
+                                <div><Image className="text-white" src={questionMarkUrl} width="14" height="14" /></div>
+                            </div>
+                            <div className="flex flex-row justify-between text-white">
+                                <p className="font-medium text-[32px]">₹ 2,312.23</p>
+                                <div className="flex flex-row justify-center items-center">
+                                    <p className="font-medium text-[16px] self-center underline">23 orders</p>
+                                    <div>
+                                        <Image src={arrowRightUrl} width="24" height="24" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
+                    <div className="flex flex-row py-2 px-6 rounded-md bg-dukan-hoverBlue justify-between">
+                        <p className="text-dukan-black95 text-sm font-normal">Next Payout Day:</p>
+                        <p className="text-dukan-black95 text-sm font-medium">Today, 4.00PM</p>
+                    </div>
                 </div>
 
                 <div className="w-2/3 flex flex-row gap-5">

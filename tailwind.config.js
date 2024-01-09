@@ -20,9 +20,13 @@ module.exports = {
           black:"#1A181E",
           black12:"#1A181E",
           black30:"#4D4D4D",
+          black50:"#808080",
+          black90:"#E6E6E6",
           black95:"#F2F2F2",
           black85:"#D9D9D9",
-          primaryBlue:"#146EB4"
+          primaryBlue:"#146EB4",
+          hoverBlue:"#0E4F82",
+        
         }
       }
       
