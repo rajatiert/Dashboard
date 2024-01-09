@@ -12,7 +12,7 @@ const Sidebar = () => {
 
         <div className="flex flex-col gap-6">
             <div className="flex flex-row gap-3">
-                <Image src={logoUrl} width="39" height="39" />
+                <Image src={logoUrl} width="39" height="39" alt="logoIcon"/>
                 <div className="flex flex-row w-full gap-3 justify-between ">
                     <div className="flex flex-col gap-1 ">
                         <div className="text-white text-[15px] font-normal">Nishyan</div>
@@ -25,10 +25,10 @@ const Sidebar = () => {
             </div>
             <div className="flex flex-col gap-1">
                 {SidebarOptions?.map((option) => {
-                    console.log("option icon = ", option?.icon);
+                  
                     const imageUrl = option?.icon;
-                    return <div className={`flex flex-row px-4 py-2 gap-3 hover:bg-dukan-lightGray  rounded-lg ${option?.label == "Payouts" && "bg-dukan-lightGray"}`}>  <div>
-                        <img src={imageUrl} width="20" height="20" /></div> <div className=" text-sm font-medium opacity-80 text-white " >{option?.label}</div>
+                    return <div key={option?.label} className={`flex flex-row px-4 py-2 gap-3 hover:bg-dukan-lightGray  rounded-lg ${option?.label == "Payouts" && "bg-dukan-lightGray"}`}>  <div>
+                        <img src={imageUrl} width="20" height="20" alt="sideBar icon" /></div> <div className=" text-sm font-medium opacity-80 text-white " >{option?.label}</div>
                     </div>
                 })}
             </div>
@@ -36,7 +36,7 @@ const Sidebar = () => {
         </div>
         <div className="flex flex-row gap-3 rounded-lg bg-dukan-lightGray px-3 py-[6px] items-center">
             <div className="">
-                <Image src={creditsLogo} width="36" height="36"/>
+                <Image src={creditsLogo} width="36" height="36" alt="creditsIcon"/>
             </div>
             <div className="flex flex-col justify-between">
                    <p className="text-[13px] font-normal opacity-80 text-white">Available credits</p>
