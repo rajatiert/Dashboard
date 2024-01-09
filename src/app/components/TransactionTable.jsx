@@ -1,8 +1,10 @@
+"use client"
 import Image from "next/image";
 import { searchUrl, sortUrl, downloadUrl } from "@/constants/constant";
 import { orderData } from "@/constants/constant";
 import { Fragment } from "react";
 import { greenUrl , grayUrl } from "@/constants/constant";
+import { convertToCSV } from "@/utility/payoutUtility";
 
 const TransactionTable = () => {
     return (
@@ -17,7 +19,7 @@ const TransactionTable = () => {
                         <p className="text-[16px] text-dukan-black30">Sort</p>
                         <div><Image src={  sortUrl} width="14" height="14" /></div>
                     </div>
-                    <div className="flex flex-row gap-2 px-4 justify-center items-center py-3.5 text-sm border-[1px] border-dukan-black85 rounded-[4px]">
+                    <div onClick={()=>convertToCSV(orderData)} className="flex flex-row gap-2 px-4 justify-center items-center py-3.5 text-sm border-[1px] border-dukan-black85 rounded-[4px]">
 
                         <div><Image src={downloadUrl} width="20" height="20" /></div>
                     </div>

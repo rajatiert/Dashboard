@@ -35,7 +35,6 @@ export const orderData = [
     "TransactionID": 123456789,
     "RefundDate": "2024-01-10",
     "OrderAmount": "₹ 50.00",
-    "FontSize": "10px"
   },
   {
     "OrderID": "#1002",
