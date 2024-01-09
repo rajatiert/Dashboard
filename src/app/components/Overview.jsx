@@ -19,7 +19,7 @@ const Overview = () => {
             </div>
 
             <div className="flex flex-row w-full gap-5 ">
-                <div className=" min-w-[360px] min-h-[154px] bg-dukan-primaryBlue flex flex-col justify-between rounded-md ">
+                <div className="w-1/3 min-h-[154px] bg-dukan-primaryBlue flex flex-col justify-between rounded-md ">
 
                     <div className="flex flex-col justify-between p-4  ">
                         <div className="flex flex-col">
@@ -41,21 +41,21 @@ const Overview = () => {
 
                     </div>
                     <div className="flex flex-row py-2 px-6 rounded-md bg-dukan-hoverBlue justify-between">
-                        <p className="text-dukan-black95 text-sm font-normal">Next Payout Day:</p>
-                        <p className="text-dukan-black95 text-sm font-medium">Today, 4.00PM</p>
+                        <p className="text-dukan-black95 text-sm font-normal ">Next Payout Day:</p>
+                        <p className="text-dukan-black95 text-sm font-medium ">Today, 4.00PM</p>
                     </div>
                 </div>
 
                 <div className="w-2/3 flex flex-row gap-5">
-                    <div className="flex flex-col justify-between max-h-[118px] w-full rounded-[6px] p-4 bg-white">
+                    <div className="flex flex-col justify-between max-h-[118px]  w-full rounded-[6px] p-4 bg-white">
                         <div className="flex flex-row text-black items-center gap-2">
                             <p className="font-normal text-[16px]">Amount Pending</p>
                             <div><Image src={questionLogo} width="14" height="14" /></div>
                         </div>
                         <div className="flex flex-row justify-between">
-                            <p className="text-[32px] font-medium ">₹ 92,312</p>
-                            <div className="flex flex-row underline text-dukan-primaryBlue items-center">
-                                <p className="text-[16px]">13 orders</p>
+                            <p className="text-[32px] font-medium whitespace-nowrap ">₹ 92,312</p>
+                            <div className="flex flex-row underline text-dukan-primaryBlue items-center ">
+                                <p className="text-[16px] whitespace-nowrap">13 orders</p>
                                 <div>
                                     <Image src={arrowRightColor} width="24" height="24" />
                                 </div>
@@ -63,13 +63,13 @@ const Overview = () => {
 
                         </div>
                     </div>
-                    <div className="flex flex-col justify-between h-[118px] w-full rounded-[6px] p-4 bg-white">
+                    <div className="flex flex-col justify-between h-[118px]  w-full rounded-[6px] p-4 bg-white">
                         <div className="flex flex-row text-black items-center gap-2 ">
                             <p className="font-normal text-[16px]">Amount Processed</p>
                             <div><Image src={questionLogo} width="14" height="14" /></div>
                         </div>
                         <div className="flex flex-row justify-between">
-                            <p className="text-[32px] font-medium">₹ 23,92,312.19</p>
+                            <p className="text-[32px] font-medium whitespace-nowrap">₹ 23,92,312.19</p>
                         </div>
                     </div>
                 </div>

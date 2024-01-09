@@ -7,7 +7,7 @@ import { greenUrl , grayUrl } from "@/constants/constant";
 const TransactionTable = () => {
     return (
         <div className="flex flex-col gap-3 w-full bg-white p-3 rounded-[4px]">
-            <div className="flex flex-row  justify-between">
+            <div className="flex flex-row  justify-between ">
                 <div className="flex flex-row gap-2 px-4 justify-center items-center py-3.5 text-sm border-[1px] border-dukan-black85 rounded-[4px]">
                     <div><Image src={searchUrl} width="14" height="14" /></div>
                     <input type="text" className="focus:outline-none bg-white placeholder:text-sm" placeholder="Order Id or Transaction Id" />
