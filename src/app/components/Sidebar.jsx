@@ -37,6 +37,7 @@ const Sidebar = () => {
         <div className="flex flex-row gap-3 rounded-lg bg-dukan-lightGray px-3 py-[6px] items-center">
             <div className="">
                 <Image src={creditsLogo} width="36" height="36" alt="creditsIcon"/>
+                
             </div>
             <div className="flex flex-col justify-between">
                    <p className="text-[13px] font-normal opacity-80 text-white">Available credits</p>
